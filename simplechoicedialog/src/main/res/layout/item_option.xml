@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RadioButton
+        android:id="@+id/btn_radio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_sixteen"
+        android:layout_marginLeft="@dimen/space_sixteen"
+        android:layout_marginTop="@dimen/space_eight"
+        android:layout_marginBottom="@dimen/space_eight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_item_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_eight"
+        android:layout_marginLeft="@dimen/space_eight"
+        android:layout_marginEnd="@dimen/space_eight"
+        android:layout_marginRight="@dimen/space_eight"
+        app:fontFamily="sans-serif"
+        android:textColor="@color/equipment_dialog_title"
+        android:textSize="@dimen/text_size_5"
+        android:textStyle="normal"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_radio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_radio"
+        app:layout_constraintTop_toTopOf="@+id/btn_radio"
+        tools:text="SKY HDTV Slim" />
+
+    <TextView
+        android:id="@+id/txt_item_subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/space_eight"
+        android:layout_marginLeft="@dimen/space_eight"
+        android:layout_marginTop="@dimen/space_one"
+        app:fontFamily="sans-serif"
+        android:textColor="@color/black__54"
+        android:textSize="@dimen/text_size_4"
+        android:textStyle="normal"
+        app:layout_constraintStart_toEndOf="@+id/btn_radio"
+        app:layout_constraintTop_toBottomOf="@+id/txt_item_title"
+        tools:text="+ R$ 19,90" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
